@@ -1,0 +1,90 @@
+@@ -1,89 +0,0 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <style>
+        body {
+          margin: 0;
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #f3f3f3;
+          position: fixed;
+          height: 70%;
+          overflow: auto;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: black;
+          padding: 16px;
+          text-decoration: none;
+        }
+         
+        .sidebar a.active {
+          background-color: #275C96;
+          color: white;
+        }
+        
+        .sidebar a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        
+        div.content {
+          margin-left: 200px;
+          padding: 1px 16px;
+          height: 1000px;
+        }
+        
+        @media screen and (max-width: 700px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {float: left;}
+          div.content {margin-left: 0;}
+        }
+        
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="sidebar">
+          <a class="active" href="#etusivu">Etusivu</a>
+          <a href="#jälleenmyyjät">Jälleenmyyjät Pohjois-Karjalassa</a>
+          <a href="#magneetit">Jääkaappimagmneetti</a>
+          <a href="#yhteys">Ota yhteyttä</a>
+          <a href="#galleria">Galleria</a>
+          <a href="#DIY">DIY tuotteet</a>
+          <a href="#kassit">Kylä kassit</a>
+          <a href="#kortit">Postikortti</a>
+        </div>
+        
+        <div class="content">
+            <h1>Valokuvatuotteita Pohjois-Karjalasta</h1>
+            <p>Valokuvauspalvelut tilauksesta.
+                Tuntiveloitus 55 €/h. Kuvakäsittely raw-tiedostoista lähetyskuntoon100 kpl:n erä 55 €/erä. Hinnat sisältävät 24 % Alv.
+                Laitan puh.numeroni kirjoittamalla (vähentääkseni ainakin ulkomailta tulevia"huipputarjouksia"):
+                nolla, neljä, nolla, viisi,kahdeksan,nolla,yksi,kolme,seitsemän,kolme.</p>
+                
+            <p>Huom! Kuvatuotesivuni ovat pääsääntöisesti aina päivitysten suhteen jälkijunassa. 
+                Yksinyrittäjänä kun teen kaiken itse (vaikka en enää ole mikään "pääskynen"). 
+                Teen siis joka päivä täydet tunnit kuvauksia, kuvatuotevalmistusta - ja suunnittelua , kuvien toimituksia, myyntipisteitten hoitamista normaalien toimistotöitten ja kiinteistömme vaatimien töitten lisäksi. Ehkä em. 
+                syistä aion jatkossa tiivistää näitä sivuja ja julkaisen vain kustakin aiheesta vain yhden kuvan. Mainitun kuvan kohdalla kerron tietenkin kohteen ja valokuvaajan nimen sekä sen mitä mainitusta kuvasta on tehty: esim. postikortti, jääkaappimagmneetti, ns, kyläkassi vai mahdollisesti joku muu kuvatuote.</p>
+        
+        </div>
+</body>
