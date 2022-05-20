@@ -1,37 +1,96 @@
--<!DOCTYPE html>
-<head>
+<!DOCTYPE html>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-    
-    <form action="/lomake.php">
-        <label for="fname">Lähettäjä:</label>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <label for="lname">Lähiosoite:</label>
-        <input type="text" id="lname" name="lname" value=""><br>
-        <label for="lname">Postinumero:</label>
-        <input type="text" id="lname" name="lname" value=""><br>
-        <label for="lname">Postioimipaikka:</label>
-        <input type="text" id="lname" name="lname" value=""><br>
-        <label for="lname">Puhelin:</label>
-        <input type="text" id="lname" name="lname" value=""><br>
-        <label for="lname">Sähköpostiosoite:</label>
-        <input type="text" id="lname" name="lname" value=""><br>
-        
-        
-        
-        
-        
-        <input type="submit" value="Submit">
-    </form> 
-
-
-
-
-
 
     
+    <style>
+        body {
+          margin: 0;
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #f3f3f3;
+          position: fixed;
+          height: 70%;
+          overflow: auto;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: black;
+          padding: 16px;
+          text-decoration: none;
+        }
+         
+        .sidebar a.active {
+          background-color: #275C96;
+          color: white;
+        }
+        
+        .sidebar a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        
+        div.form {
+          margin-left: 200px;
+          padding: 1px 16px;
+          height: 1000px;
+        }
+        
+        @media screen and (max-width: 700px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {float: left;}
+          div.content {margin-left: 0;}
+        }
+        
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+        </style>
+        </head>
+    <body>
+        <div class="sidebar">
+            <a class="active" href="http://localhost/verkkosivu/main.html">Etusivu</a>
+            <a href="http://localhost/verkkosivu/jalleenmyyjat.html">Jälleenmyyjät Pohjois-Karjalassa</a>
+            <a href="http://localhost/verkkosivu/magneetit.html">Jääkaappimagmneetti</a>
+            <a href="http://localhost/verkkosivu/yhteys.html">Ota yhteyttä</a>
+            <a href="http://localhost/verkkosivu/galleria.html">Galleria</a>
+            <a href="http://localhost/verkkosivu/diy.html">DIY tuotteet</a>
+            <a href="http://localhost/verkkosivu/kassit.html">Kylä kassit</a>
+            <a href="http://localhost/verkkosivu/kortit.html">Postikortti</a>
+        </div>
+        
+<br>
+        <div class="form">
+            <form action="/lomake.php">
+                <label for="fname">Lähettäjä:</label>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Lähiosoite:</label>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="lname">Postinumero:</label>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="lname">Postioimipaikka:</label>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="lname">Puhelin:</label>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="lname">Sähköpostiosoite:</label>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <input type="submit" value="Submit">
+            </form> 
+        </div>
 
-      
-</body>
+    </body>
+
+</html>
