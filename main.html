@@ -1,19 +1,22 @@
 <!DOCTYPE html>
+<html lang="fi">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
     
     <style>
+
         body {
           margin: 0;
           font-family: "Lato", sans-serif;
+          background-color: rgba(0, 0, 0, 0.85);
         }
         
         .sidebar {
           margin: 0;
           padding: 0;
           width: 200px;
-          background-color: #f3f3f3;
+          background-color: rgba(255, 255, 255, 0.1);
           position: fixed;
           height: 70%;
           overflow: auto;
@@ -21,25 +24,28 @@
         
         .sidebar a {
           display: block;
-          color: black;
+          color: rgba(0, 0, 0, 0.85);
           padding: 16px;
           text-decoration: none;
+          color: white;
         }
-         
+
         .sidebar a.active {
           background-color: #275C96;
           color: white;
         }
         
+
         .sidebar a:hover:not(.active) {
-          background-color: #555;
-          color: white;
+          background-color: rgba(255, 255, 255, 0.25);
+          color: rgb(255, 255, 255);
         }
         
         div.content {
           margin-left: 200px;
           padding: 1px 16px;
           height: 1000px;
+          
         }
         
         @media screen and (max-width: 700px) {
@@ -58,20 +64,34 @@
             float: none;
           }
         }
+
+        h1 {
+          color: white;
+          text-align: center;
+        }
+
+
+
+          p {
+            color: white;
+            text-align: left;
+          }
+
+
+
         </style>
         </head>
         <body>
         
-        <div class="sidebar">
-          <a class="active" href="http://localhost/verkkosivu/main.html">Etusivu</a>
-          <a href="http://localhost/verkkosivu/jalleenmyyjat.html">Jälleenmyyjät Pohjois-Karjalassa</a>
-          <a href="http://localhost/verkkosivu/magneetit.html">Jääkaappimagmneetti</a>
-          <a href="http://localhost/verkkosivu/yhteys.html">Ota yhteyttä</a>
-          <a href="http://localhost/verkkosivu/galleria.html">Galleria</a>
-          <a href="http://localhost/verkkosivu/diy.html">DIY tuotteet</a>
-          <a href="http://localhost/verkkosivu/kassit.html">Kylä kassit</a>
-          <a href="http://localhost/verkkosivu/kortit.html">Postikortti</a>
-        </div>
+          <div class="sidebar">
+            <a class="active" href="http://localhost/verkkosivu/main.html">Etusivu</a>
+            <a href="http://localhost/verkkosivu/jalleenmyyjat.html">Jälleenmyyjät Pohjois-Karjalassa</a>
+            <a href="http://localhost/verkkosivu/magneetit.html">Jääkaappimagmneetti</a>
+            <a href="http://localhost/verkkosivu/galleria.html">Galleria</a>
+            <a href="http://localhost/verkkosivu/kassit.html">Kylä kassit</a>
+            <a href="http://localhost/verkkosivu/kortit.html">Postikortti</a>
+            <a href="http://localhost/verkkosivu/yhteys.html">Ota yhteyttä</a>
+          </div>
         
         <div class="content">
             <h1>Valokuvatuotteita Pohjois-Karjalasta</h1>
@@ -79,7 +99,7 @@
                 Tuntiveloitus 55 €/h. Kuvakäsittely raw-tiedostoista lähetyskuntoon100 kpl:n erä 55 €/erä. Hinnat sisältävät 24 % Alv.
                 Laitan puh.numeroni kirjoittamalla (vähentääkseni ainakin ulkomailta tulevia"huipputarjouksia"):
                 nolla, neljä, nolla, viisi,kahdeksan,nolla,yksi,kolme,seitsemän,kolme.</p>
-                
+                <br>
             <p>Huom! Kuvatuotesivuni ovat pääsääntöisesti aina päivitysten suhteen jälkijunassa. 
                 Yksinyrittäjänä kun teen kaiken itse (vaikka en enää ole mikään "pääskynen"). 
                 Teen siis joka päivä täydet tunnit kuvauksia, kuvatuotevalmistusta - ja suunnittelua , kuvien toimituksia, myyntipisteitten hoitamista normaalien toimistotöitten ja kiinteistömme vaatimien töitten lisäksi. Ehkä em. 
